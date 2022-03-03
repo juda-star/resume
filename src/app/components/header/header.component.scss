@@ -1,0 +1,69 @@
+@import "../../styles//vars";
+.header {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  transition: 0.2s all ease;
+
+  &__image-container {
+    margin: 50px auto 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+    overflow: hidden;
+  }
+  &__links {
+    .d-flex {
+      justify-content: space-evenly;
+    }
+
+    a {
+      font-size: 22px;
+      color: white;
+      transition: 0.2s all ease;
+
+      &:hover {
+        color: $main_color;
+      }
+    }
+  }
+  &__nav {
+    nav {
+      ul {
+        list-style: none;
+        li {
+          padding: 10px 0;
+          a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+              color: $main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    left: -300px;
+    &--active {
+      left: 0;
+    }
+  }
+}
+
+.menu-btn-container {
+  display: none;
+  button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+}
