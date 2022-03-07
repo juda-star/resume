@@ -3,18 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  public isActive: boolean = true;
 
-public isActive:boolean = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+   toggleMenu() {
+    this.isActive=! this.isActive;
   }
-public toggleMenu():void{
-  this.isActive ||this.isActive
-  
-}
 }

@@ -1,13 +1,15 @@
 @import "../../styles//vars";
+
 .header {
-  width: 300px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: black;
-  height: 100vh;
-  color: white;
-  transition: 0.2s all ease;
+    width: 300px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #171717;
+   height: 100vh;
+   color: white;
+   transition: 0.2s all ease;
+   z-index: 999;
 
   &__image-container {
     margin: 50px auto 10px;
@@ -20,31 +22,36 @@
     .d-flex {
       justify-content: space-evenly;
     }
-
     a {
       font-size: 22px;
-      color: white;
+      color: #fff;
       transition: 0.2s all ease;
-
       &:hover {
-        color: $main_color;
+        color: $main-color;
       }
     }
   }
   &__nav {
+    // margin-top: 30px;
     nav {
       ul {
         list-style: none;
         li {
-          padding: 10px 0;
+          // padding: 10px 0;
           a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             &:hover {
-              color: $main_color;
+              color: $main-color;
             }
           }
         }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      margin-top: 30px;
+      li {
+        padding: 10px 0;
       }
     }
   }
@@ -56,14 +63,17 @@
   }
 }
 
-.menu-btn-container {
-  display: none;
-  button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
-  @media screen and (max-width: 991px) {
-    display: block;
-  }
-}
+ .menu-btn-container {
+   display: none;
+   button {
+     position: fixed;
+     top: 10px;
+     right: 10px;
+     background: $main-color;
+     z-index: 999;
+   }
+   @media screen and (max-width: 991px) {
+
+     display: block;
+   }
+ }

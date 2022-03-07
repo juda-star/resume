@@ -1,1 +1,48 @@
-<p>contact works!</p>
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <span class="seperator"></span>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 contact__info">
+        <ul>
+          <li>
+            <span class="material-icons"> location_on </span> Haslosha
+            21,Petah-Tikva,Israel
+          </li>
+          <li>
+            <span class="material-icons"> email </span> Juda.ishta@gmail.com
+          </li>
+          <li>
+            <span class="material-icons"> phone_iphone </span>
+            <a href="tel:052-664-8599">052-664-8599</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <div class="contact__form">
+          <form>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input required matInput />
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input required matInput />
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Subject</mat-label>
+                <input required matInput />
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Message</mat-label>
+                <textarea required matInput placeholder="lets talk..." ></textarea>
+              </mat-form-field>
+              <button mat-raised-button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
